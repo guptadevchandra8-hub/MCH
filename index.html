@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Munger Camera Hub | CP PLUS CCTV & Security Solutions</title>
+<meta name="description" content="CP PLUS CCTV cameras, NVR, DVR, PoE switches, storage and accessories with COD ordering.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;line-height:1.5}
+header{background:#0b1220;color:#fff;padding:13px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50}
+.logo{font-size:20px;font-weight:800}.nav{display:flex;gap:8px;align-items:center}
+.nav a,.cartBtn{color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px}
+.cartBtn{background:#19a463;border:0;font-weight:800;cursor:pointer}
+.call{background:#19a463;color:#fff;padding:9px 13px;border-radius:8px;text-decoration:none;font-weight:bold}
+.hero{background:linear-gradient(135deg,#101a30,#1d4f73);color:#fff;padding:58px 6%;text-align:center}
+.hero h1{font-size:36px;margin-bottom:12px}.hero p{font-size:17px;margin-bottom:22px}
+.btn{display:inline-block;background:#ffb000;color:#111;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:800;margin:5px;border:0;cursor:pointer}
+.btn.whatsapp{background:#20b968;color:#fff}.btn.dark{background:#0b1220;color:#fff}
+section{padding:42px 6%;max-width:1150px;margin:auto}
+.title{text-align:center;font-size:28px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;padding:20px;border-radius:14px;box-shadow:0 4px 16px #00000010}
+.card .icon{font-size:36px;margin-bottom:8px}.card h3{margin-bottom:7px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}
+.product{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px #00000012;border:1px solid #e7edf5}
+.product img{width:100%;height:190px;object-fit:contain;background:#f1f5f9;padding:12px}
+.product-body{padding:16px}.product h3{font-size:17px;margin-bottom:6px}
+.spec{font-size:13px;color:#64748b;min-height:42px}
+.price{font-size:22px;font-weight:900;margin:9px 0}
+.rating{color:#f59e0b;font-weight:800}.muted{color:#64748b;font-size:13px}
+.row{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.service{background:#0f172a;color:#fff;max-width:none}.service-inner{max-width:1150px;margin:auto}
+.contact{background:#fff}.contactbox{max-width:650px;margin:auto;text-align:center;background:#eef5ff;padding:28px;border-radius:16px}
+footer{background:#0b1220;color:#dbe3ef;text-align:center;padding:25px}.small{font-size:14px;color:#64748b;margin-top:8px}
+#cartPanel{position:fixed;right:12px;bottom:12px;width:min(430px,calc(100% - 24px));max-height:85vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:0 15px 50px #0005;padding:20px;z-index:100;display:none}
+#cartPanel.show{display:block}.cartHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.close{border:0;background:#e2e8f0;border-radius:8px;padding:6px 10px;cursor:pointer}
+.cartItem{border-bottom:1px solid #e5e7eb;padding:12px 0}.qty button{padding:4px 9px;border:1px solid #cbd5e1;background:#fff;border-radius:6px;cursor:pointer}
+.qty span{padding:0 8px;font-weight:800}.total{font-size:20px;font-weight:900;margin:14px 0}
+.form{display:grid;gap:10px}.form input,.form textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:9px;font:inherit}.form textarea{min-height:85px;resize:vertical}
+.cod{padding:11px;border:2px solid #20b968;border-radius:10px;background:#effcf5;font-weight:800}
+.success{display:none;text-align:center;padding:28px 12px}.success.show{display:block}.successIcon{font-size:58px}
+.ratingBox{margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb}.stars button{border:0;background:none;font-size:25px;cursor:pointer;padding:1px}
+.notice{background:#fff8e1;border:1px solid #f1d27a;padding:12px;border-radius:10px;font-size:13px;margin:10px 0}
+@media(max-width:700px){.nav a{display:none}.hero h1{font-size:29px}header{padding:12px 4%}.logo{font-size:17px}.product img{height:170px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📷 Munger Camera Hub</div>
+  <div class="nav">
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <button class="cartBtn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+    <a class="call" href="tel:+917277244568">Call</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>CP PLUS CCTV & Security Solutions</h1>
+  <p>घर, दुकान, ऑफिस और स्कूल के लिए CCTV Camera, NVR, DVR, PoE और accessories.</p>
+  <a class="btn" href="#products">📷 Cameras & Products देखें</a>
+  <a class="btn whatsapp" href="https://wa.me/917277244568?text=Namaste%2C%20mujhe%20CCTV%20products%20ke%20baare%20mein%20jaankari%20chahiye.">💬 WhatsApp पूछताछ</a>
+</div>
+
+<section id="products">
+  <h2 class="title">CP PLUS Products</h2>
+  <div class="notice">Prices shown are current online reference prices checked during development and may change. Final selling price can be edited in this file.</div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section id="services" class="service">
+ <div class="service-inner">
+  <h2 class="title">CCTV कहाँ लगवाना है?</h2>
+  <div class="grid">
+   <div class="card"><h3>🏠 घर</h3><p>Entrance, parking और important areas की monitoring.</p></div>
+   <div class="card"><h3>🏪 दुकान</h3><p>Shop security और customer/stock monitoring.</p></div>
+   <div class="card"><h3>🏢 ऑफिस</h3><p>Office premises और entry points की निगरानी.</p></div>
+   <div class="card"><h3>🏫 स्कूल</h3><p>Campus और important locations के लिए surveillance.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <h2 class="title">हमसे संपर्क करें</h2>
+ <div class="contactbox">
+  <h3>📍 Shadipur, Gola Road, Munger, Bihar</h3>
+  <p>अपने location के लिए CCTV camera और installation का price जानने के लिए संपर्क करें.</p>
+  <br>
+  <a class="btn whatsapp" href="https://wa.me/917277244568?text=Namaste%2C%20mujhe%20CCTV%20installation%20aur%20price%20ki%20jaankari%20chahiye.">WhatsApp करें</a>
+  <a class="btn" href="tel:+917277244568">Call करें</a>
+ </div>
+</section>
+
+<div id="cartPanel">
+ <div class="cartHead"><h2>🛒 Your Cart</h2><button class="close" onclick="closeCart()">✕</button></div>
+ <div id="cartItems"></div>
+ <div class="total">Total: ₹<span id="cartTotal">0</span></div>
+ <div id="checkoutArea">
+  <h3 style="margin-bottom:10px">Customer Details</h3>
+  <form class="form" id="orderForm">
+   <input id="custName" required placeholder="Full Name *">
+   <input id="custPhone" required type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="Mobile Number (10 digits) *">
+   <textarea id="custAddress" required placeholder="Full Address *"></textarea>
+   <div class="cod">💵 Payment: Cash on Delivery (COD) only</div>
+   <button class="btn" style="width:100%" type="submit">Place COD Order</button>
+  </form>
+  <p class="small">Order submit करने पर order summary तैयार होगी. GitHub Pages अकेले WhatsApp को customer की जानकारी बिना किसी WhatsApp/automation service के silently send नहीं कर सकता.</p>
+ </div>
+ <div class="success" id="successBox">
+  <div class="successIcon">✅</div>
+  <h2>Order Placed Successfully!</h2>
+  <p>Thank you for choosing Munger Camera Hub.</p>
+  <p><b>Our technical team will contact you shortly</b> to confirm your order and installation details.</p>
+  <button class="btn dark" onclick="closeCart()">Continue Shopping</button>
+ </div>
+</div>
+
+<footer>
+ <p>© 2026 Munger Camera Hub. All Rights Reserved.</p>
+ <p class="small">CP PLUS CCTV • NVR • DVR • PoE • Storage • Installation • Service</p>
+</footer>
+
+<script>
+const products=[
+ {id:1,name:"CP-UNC-DA21L3C-Q",title:"2MP Network IR Dome Camera",price:3299,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+2MP+Dome",spec:"2MP • IR Night Vision • 30m • Network Camera",rating:0},
+ {id:2,name:"CP-UNC-TA21L3C-Q",title:"2MP Network IR Bullet Camera",price:1200,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+2MP+Bullet",spec:"2MP • IR Night Vision • 30m • Network Camera",rating:0},
+ {id:3,name:"CP-UNC-TA21L3C-LQ",title:"2MP Dual Light Bullet Camera",price:4190,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+Dual+Light",spec:"2MP • Dual Light • Bullet • Network Camera",rating:0},
+ {id:4,name:"CP-UNR-108F1",title:"8 Channel Network Video Recorder",price:6499,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+8CH+NVR",spec:"8 Channel • Network Video Recorder",rating:0},
+ {id:5,name:"CP-UVR-0801F1V-I",title:"8 Channel 1080P Digital Video Recorder",price:3699,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+8CH+DVR",spec:"8 Channel • 1080P • Digital Video Recorder",rating:0},
+ {id:6,name:"CP-ANW-HP8H2-N12",title:"8 Port PoE Switch",price:2105,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+8+Port+PoE",spec:"8 PoE Ports • 2 Uplink Ports",rating:0},
+ {id:7,name:"CP PLUS 500GB Surveillance HDD",title:"500GB Surveillance Hard Disk",price:3170,img:"https://placehold.co/800x500/f1f5f9/172033?text=500GB+Surveillance+HDD",spec:"Surveillance storage • 500GB reference listing",rating:0},
+ {id:8,name:"CP PLUS 2.4MP Dome",title:"2.4MP Full HD Indoor Dome Camera",price:1148,img:"https://placehold.co/800x500/f1f5f9/172033?text=CP+PLUS+2.4MP+Dome",spec:"2.4MP • Full HD • Indoor Dome • IR Night Vision",rating:0}
+];
+let cart=JSON.parse(localStorage.getItem("mch_cart")||"[]");
+
+function money(n){return new Intl.NumberFormat("en-IN").format(n)}
+function stars(r){return "★".repeat(Math.round(r))+"☆".repeat(5-Math.round(r))}
+function renderProducts(){
+ const grid=document.getElementById("productGrid");
+ grid.innerHTML=products.map(p=>`
+ <article class="product">
+  <img src="${p.img}" alt="${p.title}" loading="lazy">
+  <div class="product-body">
+   <h3>${p.title}</h3><div class="muted">${p.name}</div>
+   <p class="spec">${p.spec}</p>
+   <div class="rating">★★★★★ <span class="muted">New rating</span></div>
+   <div class="price">₹${money(p.price)}</div>
+   <button class="btn" style="width:100%" onclick="addToCart(${p.id})">➕ Add to Cart</button>
+   <div class="ratingBox"><div class="muted">Your rating</div><div class="stars">${[1,2,3,4,5].map(n=>`<button onclick="rateProduct(${p.id},${n})">${n<=p.rating?"★":"☆"}</button>`).join("")}</div></div>
+  </div>
+ </article>`).join("");
+}
+function addToCart(id){
+ const item=cart.find(x=>x.id===id);
+ if(item)item.qty++; else cart.push({id,qty:1});
+ saveCart();openCart();
+}
+function saveCart(){localStorage.setItem("mch_cart",JSON.stringify(cart));updateCartCount();renderCart()}
+function updateCartCount(){document.getElementById("cartCount").textContent=cart.reduce((a,b)=>a+b.qty,0)}
+function renderCart(){
+ const box=document.getElementById("cartItems");
+ if(!cart.length){box.innerHTML="<p class='muted'>Cart is empty.</p>";document.getElementById("cartTotal").textContent="0";return}
+ let total=0;
+ box.innerHTML=cart.map(i=>{
+  const p=products.find(x=>x.id===i.id); total+=p.price*i.qty;
+  return `<div class="cartItem"><div class="row"><b>${p.title}</b><b>₹${money(p.price*i.qty)}</b></div><div class="qty" style="margin-top:7px"><button onclick="changeQty(${i.id},-1)">−</button><span>${i.qty}</span><button onclick="changeQty(${i.id},1)">+</button> <button class="close" onclick="removeItem(${i.id})">Remove</button></div></div>`;
+ }).join("");
+ document.getElementById("cartTotal").textContent=money(total);
+}
+function changeQty(id,d){const x=cart.find(i=>i.id===id);if(!x)return;x.qty+=d;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);saveCart()}
+function removeItem(id){cart=cart.filter(i=>i.id!==id);saveCart()}
+function openCart(){document.getElementById("cartPanel").classList.add("show");document.getElementById("successBox").classList.remove("show");document.getElementById("checkoutArea").style.display="block";renderCart()}
+function closeCart(){document.getElementById("cartPanel").classList.remove("show")}
+function rateProduct(id,r){
+ const p=products.find(x=>x.id===id);p.rating=r;renderProducts();
+}
+document.getElementById("orderForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ if(!cart.length){alert("Please add at least one product to cart.");return}
+ const name=document.getElementById("custName").value.trim();
+ const phone=document.getElementById("custPhone").value.trim();
+ const address=document.getElementById("custAddress").value.trim();
+ const lines=cart.map(i=>{const p=products.find(x=>x.id===i.id);return `${p.title} x ${i.qty} = ₹${p.price*i.qty}`});
+ const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);
+ const msg=`New COD Order - Munger Camera Hub%0A%0ACustomer: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(phone)}%0AAddress: ${encodeURIComponent(address)}%0A%0AProducts:%0A${encodeURIComponent(lines.join("\n"))}%0A%0ATotal: ₹${total}%0APayment: Cash on Delivery`;
+ // Static GitHub Pages cannot silently send this WhatsApp message.
+ // We show success first; the business can later connect a server/automation endpoint.
+ localStorage.removeItem("mch_cart");cart=[];updateCartCount();
+ document.getElementById("checkoutArea").style.display="none";
+ document.getElementById("successBox").classList.add("show");
+});
+renderProducts();updateCartCount();renderCart();
+</script>
+</body>
+</html>
